@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+<style type="text/css">
+.inline-blocj {
+}
+</style>
+<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.js"></script>
+	
+<meta charset="utf-8">
+<title>John Joe</title>
+</head>
+
+<body><form style="">
+	
+<h5 style="background-color: maroon;font-family: Cambria;font-size: 20pt;font-weight: bold;color: white;margin-top: 15px;margin-bottom: 15px;padding-left: 10px;padding-bottom: 10px;padding-top: 10px">My University</h5>
+	<p style="margin-left: 10px">This is my university website.
+It is an awesome universiity.
+We have many very interesting research going on here.</p>
+<aside class="row">
+	<div class="col-sm-2 ">
+	<label>Year : </label>
+	<select id="Years" style="width: inherit">
+	<option value="0">All</option>
+	<option value="2013">2013</option>
+	<option value="2014">2014</option>
+	<option value="2015">2015</option>
+	<option value="2016">2016</option>
+	</select>
+		</div>
+	<div class="col-sm-3">
+	<label> Process : </label>
+	<table width="200" >
+	  <tr>
+	    <td><label>
+	      <input type="radio" name="Process" value="import" id="Process_0">
+	      Student</label></td>
+	    <td><label>
+	      <input type="radio" name="Process" value="export" id="Process_1">
+	      Professor</label></td>
+      </tr>
+    </table>
+		</div>
+	<div class="col-sm-3">
+<label>  Departments : </label>
+	<select id="departments">
+	</select>
+		</div>
+	<div class="col-sm-3">
+	<input type="button" id="btnGo" value="Go"></div>
+	</aside>
+
+	</form>
+	<table width="200" border="1">
+		<thead style="font-weight: bold">
+			 <tr>
+	    <td>Student ID</td>
+	    <td>Name</td>
+      </tr>
+		</thead>
+		<tbody>
+	  <tr>
+	    <td>0001</td>
+	    <td>John Doe</td>
+      </tr>
+			 <tr>
+	    <td>0002</td>
+	    <td>Jane Doe</td>
+      </tr>
+			</tbody>
+    </table>
+</body>
+	<script type="application/javascript">
+		//on page load
+	window.onload = function()
+	{
+		var ddl = $("#departments");
+		ddl.empty();
+		ddl.append(new Option("Select..","0"));
+		ddl.append(new Option("Mechanical","1"));
+		ddl.append(new Option("Computer Science","2"));
+		ddl.append(new Option("Electrical","3"));
+		ddl.append(new Option("Civil","4"));
+		
+		$("#btnGo").click(function(){
+			alert("Hey ! I'm still working on this functionality. :)");
+		})
+	}
+	</script>
+</html>
