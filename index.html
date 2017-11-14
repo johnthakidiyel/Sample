@@ -1,29 +1,30 @@
 <!doctype html>
 <html>
 <head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
 <style type="text/css">
-.inline-blocj {
-}
+	.grey-background{
+		background: #D0D0D0;
+	}
 </style>
 <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.js"></script>
 	
-<meta charset="utf-8">
 <title>John Joe</title>
 </head>
 
-<body><form style="">
+<body class="grey-background">
+	<div class="col-sm-9" style="margin: 0 auto ; background: white;padding-right: 0px;padding-left:0px ">
+	<form>
 	
 <h5 style="background-color: maroon;font-family: Cambria;font-size: 20pt;font-weight: bold;color: white;margin-top: 15px;margin-bottom: 15px;padding-left: 10px;padding-bottom: 10px;padding-top: 10px">My University</h5>
 	<p style="margin-left: 10px">This is my university website.
 It is an awesome universiity.
 We have many very interesting research going on here.</p>
-<aside class="row">
+<aside class="row col-sm-12">
 	<div class="col-sm-2 ">
 	<label>Year : </label>
 	<select id="Years" style="width: inherit">
@@ -57,7 +58,8 @@ We have many very interesting research going on here.</p>
 	</aside>
 
 	</form>
-	<table width="200" border="1">
+		<div class="col-sm-6">
+	<table  width="200" border="1">
 		<thead style="font-weight: bold">
 			 <tr>
 	    <td>Student ID</td>
@@ -75,6 +77,8 @@ We have many very interesting research going on here.</p>
       </tr>
 			</tbody>
     </table>
+			</div>
+		</div>
 </body>
 	<script type="application/javascript">
 		//on page load
